@@ -9,15 +9,16 @@ export const DataProvider = (props) => {
       try {
         const todoStore = JSON.parse(localStorage.getItem('todoStore'))
         if(todoStore) setTodos(todoStore)
+        console.log(todoStore)
       } catch (error) {
-        console.error(error)
+        console.log(error)
       }
     }, [])
 
     useEffect(() => {
       localStorage.setItem('todoStore', JSON.stringify(todos))
     }, [todos])
-
+    
 
   
   return (

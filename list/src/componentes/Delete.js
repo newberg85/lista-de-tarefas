@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 import { DataContext } from './DataProvider';
 
 
@@ -12,4 +12,4 @@ export default function Delete() {
   return (
     <button id='delete' onClick={deletar}></button>
   )
-}
+}*/
